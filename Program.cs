@@ -11,6 +11,7 @@ namespace DesignPatterns
             Console.WriteLine("Creational Patterns:");
             Console.WriteLine("---------------------------");
             Console.WriteLine("1 - Singleton");
+            Console.WriteLine("2 - Factory Method");
 
             var option = Console.ReadKey();
 
@@ -22,6 +23,9 @@ namespace DesignPatterns
             {
                 case '1':
                     SingletonExecution.Execute();
+                    break;
+                case '2':
+                    Client.Execute();
                     break;
             }
 
