@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GEmDocnSYf/QJGjALu/8lP5lyLE8/8Kvwf9dHUXUT67XwbHim4z0mdZW3ty/6IPccOrnN9kcah8RlUXlKhr0Fw==",
+  "success": true,
+  "projectFilePath": "C:\\developer\\dotnet\\DesignPatterns\\DesignPatterns.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\freit\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
