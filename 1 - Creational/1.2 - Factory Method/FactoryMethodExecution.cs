@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPatterns
 {
-    class Client
+    class FactoryMethodExecution
     {
         public static void Execute()
         {

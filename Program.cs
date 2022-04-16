@@ -12,6 +12,7 @@ namespace DesignPatterns
             Console.WriteLine("---------------------------");
             Console.WriteLine("1 - Singleton");
             Console.WriteLine("2 - Factory Method");
+            Console.WriteLine("3 - Abstract Factory");
 
             var option = Console.ReadKey();
 
@@ -25,7 +26,10 @@ namespace DesignPatterns
                     SingletonExecution.Execute();
                     break;
                 case '2':
-                    Client.Execute();
+                    FactoryMethodExecution.Execute();
+                    break;
+                case '3':
+                    AbstractFactoryExecution.Execute();
                     break;
             }
 
