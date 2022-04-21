@@ -13,6 +13,9 @@ namespace DesignPatterns
             Console.WriteLine("1 - Singleton");
             Console.WriteLine("2 - Factory Method");
             Console.WriteLine("3 - Abstract Factory");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Structural Patterns:");
+            Console.WriteLine("4 - Adapter");
 
             var option = Console.ReadKey();
 
@@ -30,6 +33,9 @@ namespace DesignPatterns
                     break;
                 case '3':
                     AbstractFactoryExecution.Execute();
+                    break;
+                case '4':
+                    AdapterExecution.Execute();
                     break;
             }
 
