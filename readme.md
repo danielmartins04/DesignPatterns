@@ -55,7 +55,7 @@ Contras:
 
 ## Padrões Estruturais
 ### Adapter
-Adapter é um padrão de design estrutural que permite que objetos com interfaces incompatíveis colaborem, através de uma classe intermediária que serve como um tradutor entre o seu código e uma classa legada, uma classe de terceiros ou qualquer outra classe estranha.
+Adapter é um padrão de design estrutural que permite que objetos com interfaces incompatíveis colaborem, através de uma classe intermediária que serve como um tradutor entre o seu código e uma classe legada, uma classe de terceiros ou qualquer outra classe estranha.
 
 Dicas:
 * Use a classe Adapter quando quiser usar alguma classe existente, mas sua interface não for compatível com o restante do seu código.
@@ -73,3 +73,27 @@ o código do cliente.
 Benefícios:
 * Princípio da Responsabilidade Única: Você pode separar a interface ou o código de conversão de dados da lógica de negócios primária do programa.
 * Princípio do Aberto/Fechado: Você pode introduzir novos tipos de adaptadores no programa sem quebrar o código do cliente existente, desde que  funcionem com os adaptadores por meio da interface do cliente.
+
+## Padrões Comportamentais
+### Strategy
+O Strategy é um padrão comportamental que permite que você defina uma família de algoritmos, coloque-os em classes separadas e faça os objetos intercambiáveis.
+
+O padrão Strategy sugere que você pegue uma classe que faz algo específico em diversas maneiras diferentes e extraia todos esses algoritmos para classes separadas chamadas de estratégias.
+
+Dicas:
+* Utilize o padrão Strategy quando você usar diferentes variantes de um algoritmo dentro de um objeto, sendo capaz de trocar um algoritmo para outro durante a execução;
+* Utilize o Strategy quando você tem muitas classes parecidas que somente diferem na forma que elas executam algum comportamento;
+* Utilize o padrão para isolar a lógica de negócio de uma classe dos detalhes de implementação de algoritmos que podem não ser tão importantes no contexto da lógica;
+* Utilize o padrão quando sua  classe tem um operador condicional muito grande que troca entre diferentes variantes do mesmo algoritmo.
+
+Detalhes de implementação:
+* Na classe de contexto, identifique um algoritmo que é sujeito a frequentes mudanças. Pode ser também uma condicional enorme que seleciona e executa uma variante do mesmo algoritmo durante a execução do programa;
+* Declare a interface da estratégia comum para todas as variantes do algoritmo;
+* Extraia todos os algoritmos para suas próprias classes. Elas devem implementar a interface estratégica;
+* Na classe de contexto, adicione um campo para armazenar uma referência a um objeto de estratégia. Forneça um setter para substituir valores daquele campo. O contexto deve trabalhar com o objeto de estratégia somente através da interface de estratégia. O contexto pode definir uma interface que deixa a estratégia acessar seus dados.
+* Os clientes do contexto devem associá-lo com uma estratégia apropriada que coincide com a maneira que esperam que o contexto atue em seu trabalho primário.
+
+Benefícios:
+* Você pode trocar algoritmos usados dentro de um objeto durante a execução;
+* Você pode isolar os detalhes de implementação de um algoritmo do código que usa ele;
+* Princípio do aberto/fechado: Você pode introduzir novas estratégias sem mudar o contexto.

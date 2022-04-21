@@ -15,7 +15,12 @@ namespace DesignPatterns
             Console.WriteLine("3 - Abstract Factory");
             Console.WriteLine("---------------------------");
             Console.WriteLine("Structural Patterns:");
+            Console.WriteLine("---------------------------");
             Console.WriteLine("4 - Adapter");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Behavioral Patterns:");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("5 - Strategy");
 
             var option = Console.ReadKey();
 
@@ -36,6 +41,9 @@ namespace DesignPatterns
                     break;
                 case '4':
                     AdapterExecution.Execute();
+                    break;
+                case '5':
+                    StrategyExecution.Execute();
                     break;
             }
 
